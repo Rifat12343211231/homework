@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/link.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="menu">
+            <ul class="nav-menu">
+                <li class="nav-item"> <a class="link" href="http://127.0.0.1:5500/home/index.html">Главная</a></li>
+                <li class="nav-item"><a class="link" href="http://127.0.0.1:5500/game/index.html">Игра</a></li>
+                <li class="nav-item"> <a class="link" href="http://127.0.0.1:5500/calcul/index.html">Калькулятор </a>  </li>
+                    <li class="nav-item"><a class="link" href="http://127.0.0.1:5500/classwork/index.html">Работы на уроке</a></li>
+              
+            </ul>
+        </nav>
+            <div class="border">
+                <div class="text">
+                    <h1 class="title">
+                        Калькулятор
+                    </h1>
+                </div>
+                <div class="outer">
+                    <div class="centered">
+                        <input  class="btn" id="num1" type="text" placeholder="1 значение">
+                    </div>
+                    <div class="operator_btns">
+                        <button  class="btns" id="plus" onclick="op='+'">+</button>
+                        <button  class="btns" id="minus" onclick="op='-'">-</button>
+                        <button  class="btns" id="times" onclick="op='*'">x</button>
+                        <button  class="btns" id="divide" onclick="op='/'">:</button>
+                    </div>
+                    <div class="cent">
+                        <input class="btn"  id="num2" type="text" placeholder="2 значение">
+                    </div>
+                </div>
+                <div class="center">
+                    <button onclick="func()" class="btns" type="button" id="convert">решить</button>
+                    <input class="btn" id="result" type="text" placeholder="ответ" disabled>
+                </div>
+            </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

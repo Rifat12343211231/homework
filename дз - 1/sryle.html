@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/link.css">
+</head>
+<body>
+    <div class="border">
+    <div class="outer">
+        <div class="centered">
+            <input  id="num1" type="text" placeholder="1 значение">
+        </div>
+ <div class="operator_btns">
+            <button id="plus" onclick="op='+'">+</button>
+            <button id="minus" onclick="op='-'">-</button>
+            <button id="times" onclick="op='*'">x</button>
+            <button id="divide" onclick="op='/'">:</button>
+        </div>
+        <div class="cent">
+            <input  id="num2" type="text" placeholder="2 значение">
+        </div>
+    </div>
+    <div class="center">
+        <button  onclick="func()" type="button" id="convert">решить</button>
+        <input id="result" type="text"  placeholder="ответ" disabled >
+        
+    </div>
+</div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.outer {
+    display: flex;
+    justify-content: center;
+   padding-top: 200px;
+   
+}
+
+
+.centered {
+  padding-right: 10px;
+}
+
+.center {
+  display: flex; 
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.operator_btns {
+
+}
+
+.cent {
+  width: 50px;
+  padding-left: 10px;
+}
+
+
+

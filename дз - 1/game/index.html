@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>игра</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <nav class="menu">
+            <ul class="nav-menu">
+                <li class="nav-item"> <a class="link" href="http://127.0.0.1:5500/home/index.html">Главная</a></li>
+                <li class="nav-item"><a class="link" href="http://127.0.0.1:5500/game/index.html">Игра</a></li>
+                <li class="nav-item"> <a class="link" href="http://127.0.0.1:5500/calcul/index.html">Калькулятор</a></li>
+                <li class="nav-item"><a class="link" href="http://127.0.0.1:5500/classwork/index.html">Работы на уроке</a></li>
+            </ul>
+        </nav>
+        <div class="calcut">
+            <div class="text">
+                <h1 class="title">Игра "Угадай число"</h1>
+                <div class="subtitle">Компьютер загадал число от 1 до 20. Попробуйте угадать!</div>
+            </div>
+            <div class="calcut-game">
+                <label for="" class="filed__form__label">Ваше число: </label>
+                <input type="text" class="field__form__input" id="input" />
+                <button class="field__form__btn" id="btn">Проверить</button>
+            </div>
+            <div class="result__check">
+                <span class="result__check__label">Результат:</span>
+                <span class="result__check__out " id="result"></span>
+            </div>
+            <div class="attempts">
+                <span id="attempt" class="attempt">Число попыток:</span>
+                <span class="result__count__out" id="attempt"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

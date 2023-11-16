@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="nav-menu">
+            <li class="nav-item"> <a class="linker" href="http://127.0.0.1:5500/home/index.html">Главная</a></li>
+            <li class="nav-item"><a class="linker" href="http://127.0.0.1:5500/game/index.html">Игра</a></li>
+            <li class="nav-item"> <a class="linker" href="http://127.0.0.1:5500/calcul/index.html">Калькулятор </a> </li>
+            <li class="nav-item"><a class="linker" href="http://127.0.0.1:5500/classwork/index.html">Работы на уроке</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="title">Список дел</h1>
+    <div class="list">
+        <input class="task" type="text" id="task" placeholder="Добавить новое дело">
+        <button class="add-button" id="add-button">Добавить</button>
+        <ul class="todo-list" id="todo-list"></ul>
+    </div>
+
+    <div id="window" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Подтвердите удаление</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Вы уверены, что хотите удалить эти планы?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal"> Отмена</button>
+                    <button type="button" class="btn btn-primary " id="delete">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
